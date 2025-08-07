@@ -50,6 +50,7 @@ Using forEach, turn the number strings from the stringPrices array into floats a
 
 Given code below:
 */
+
 const stringPrices = ['5.47', '3.12', '8.00', '5.63', '10.70']
 let priceTotal = 0
 
@@ -58,3 +59,25 @@ let priceTotal = 0
 stringPrices.forEach((price) => (priceTotal += parseFloat(price)))
 
 console.log(priceTotal)
+
+/*
+forEach Chanllenge Task 4
+
+Directions:
+The split method turns a string into an array. In the case of alphabet below, each letter of the string is being turned into an element in an array by split. Using forEach, iterate over the alphabet array and store each letter in the array noel except for the L character.
+
+Given code below:
+*/
+
+const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
+let noel = []
+
+// noel should be: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+// Write your code below
+alphabet.forEach((letter) => {
+  if (letter !== 'L') {
+    noel.push(letter)
+  }
+})
+
+console.log(noel)
