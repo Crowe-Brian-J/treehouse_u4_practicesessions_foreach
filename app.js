@@ -103,3 +103,32 @@ percentages.forEach((percentage) => {
 })
 
 console.log(upperRange)
+
+/*
+forEach Chanllenge Task 6
+
+Directions:
+Using forEach, iterate over the colors array and store the hex colors that start with the letter F (ex. #FF0000) in the array filteredColors.
+
+Given code below:
+*/
+
+const colors = [
+  '#87E2D0',
+  '#559F4D',
+  '#FFE0F4',
+  '#7E7E7E',
+  '#FF2D2D',
+  '#F7FFEC'
+]
+let filteredColors = []
+
+// filteredColors should be: ['#FFE0F4', '#FF2D2D', '#F7FFEC']
+// Write your code below
+colors.forEach((color) => {
+  if (color.charAt(1) === 'F') {
+    filteredColors.push(color)
+  }
+})
+
+console.log(filteredColors)
