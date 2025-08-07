@@ -132,3 +132,21 @@ colors.forEach((color) => {
 })
 
 console.log(filteredColors)
+
+/*
+forEach Chanllenge Task 7
+
+Directions:
+Using forEach, capitalize all the strings in the months array and store them in the array capitalizedMonths.
+
+Given code below:
+*/
+
+const months = ['january', 'february', 'march', 'april', 'may']
+let capitalizedMonths = []
+
+// capitalizedMonths should be: ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY']
+// Write your code below
+months.forEach((month) => capitalizedMonths.push(month.toUpperCase()))
+
+console.log(capitalizedMonths)
