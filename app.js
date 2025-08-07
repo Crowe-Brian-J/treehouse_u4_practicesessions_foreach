@@ -41,3 +41,20 @@ let dayAbbreviations = []
 days.forEach((day) => dayAbbreviations.push(day.substring(0, 2)))
 
 console.log(dayAbbreviations)
+
+/*
+forEach Chanllenge Task 3
+
+Directions:
+Using forEach, turn the number strings from the stringPrices array into floats and add them all, storing the total in the variable priceTotal.
+
+Given code below:
+*/
+const stringPrices = ['5.47', '3.12', '8.00', '5.63', '10.70']
+let priceTotal = 0
+
+// priceTotal should be: 32.92
+// Write your code below
+stringPrices.forEach((price) => (priceTotal += parseFloat(price)))
+
+console.log(priceTotal)
